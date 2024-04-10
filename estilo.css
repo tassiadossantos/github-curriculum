@@ -1,0 +1,153 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Tamanho do texto padrão */
+header {
+  background-color: #808080;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Para alinhar os elementos verticalmente */
+}
+
+/* Added transition for hover effect */
+header h1 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+header h1:hover {
+  color: #a2a2a2; /* Changes color on hover */
+}
+
+header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  background-color: #a2a2a2;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #c3c3c3;
+}
+
+main {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+section {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+section h2:hover {
+  color: #a2a2a2; /* Changes color on hover */
+}
+
+section p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+section ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: #919191;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+footer a {
+  color: #fff;
+}
+
+.fa-brands,
+.fa-solid {
+  font-size: 30px;
+  margin-right: 8px;
+}
+
+/* Efeito ao passar o mouse nos ícones do rodapé */
+footer .fa-brands:hover,
+footer .fa-solid:hover {
+  color: #a2a2a2;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header h1 {
+    font-size: 16px; /* Ajustando para manter a igualdade */
+  }
+}
